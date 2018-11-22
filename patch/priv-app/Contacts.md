@@ -1,7 +1,12 @@
 ## 联系人
 APK位置： `/system/priv-app/Contacts/Contacts.apk`
 
-apktool命令： `apktool d -r *.apk`
+apktool命令： 
+`apktool if framework-res.apk`
+`apktool if framework-ext-res.apk`
+`apktool if miui.apk`
+`apktool if miuisystem.apk`
+`apktool d *.apk`
 
 ### 移除拨号菜单的充话费、充流量按钮
 代码位置： `com/android/contacts/dialer/DialerMenuDialog.smali`
