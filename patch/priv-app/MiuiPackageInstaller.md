@@ -3,7 +3,12 @@ APK位置： `/system/priv-app/MiuiPackageInstaller/MiuiPackageInstaller.apk`
 
 安卓L及以下版本： `/system/priv-app/PackageInstaller/PackageInstaller.apk`
 
-apktool命令： `apktool d *.apk`
+apktool命令： 
+`apktool if framework-res.apk`
+`apktool if framework-ext-res.apk`
+`apktool if miui.apk`
+`apktool if miuisystem.apk`
+`apktool d *.apk`
 
 ### 移除广告
 代码位置： `com/android/packageinstaller/config/CommonConfig.smali`
