@@ -4,10 +4,11 @@ APK位置： `/system/priv-app/DownloadProviderUi/DownloadProviderUi.apk`
 apktool命令： `apktool d -r *.apk`
 
 ### 移除下载热榜
-代码位置： `com/android/providers/downloads/ui/config/AppConfig.smali`
+代码位置： `com/android/providers/downloads/ui/utils/CloudConfigHelper.smali`
 ```
-.method public static isShowRank()Z
-# return false
+.method public supportRank()Z
+# 删除从“.prologue”开始一直到“const/4 v0, 0x1”之前的方法
+# 修改“const/4 v0, 0x1”为“const/4 v0, 0x0”
 ```
 
 ### 移除资源推荐
