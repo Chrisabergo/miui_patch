@@ -3,7 +3,15 @@ APK位置： `/system/priv-app/DownloadProviderUi/DownloadProviderUi.apk`
 
 apktool命令： `apktool d -r *.apk`
 
-### 移除下载热榜
+### 移除下载热榜(winterssy)
+代码位置： `com/android/providers/downloads/ui/config/AppConfig.smali`
+```
+.method public static isShowRank()Z
+# return false
+
+```
+
+### 移除下载热榜(self-use)
 代码位置： `com/android/providers/downloads/ui/utils/CloudConfigHelper.smali`
 ```
 .method public supportRank()Z
