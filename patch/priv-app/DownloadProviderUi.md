@@ -8,7 +8,6 @@ apktool命令： `apktool d -r *.apk`
 ```
 .method public static isShowRank()Z
 # return false
-
 ```
 
 ### 移除下载热榜(self-use)
